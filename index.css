@@ -1,0 +1,77 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+#addBtn,
+#inputBox {
+  margin: 0 0.2rem;
+  padding: 0.5rem;
+}
+
+.container {
+  min-height: 100vh;
+  overflow-x: hidden;
+  padding: 1rem;
+  width: 100vw;
+}
+
+#inputBox {
+  border: none;
+  border: 2px solid lightgray;
+  border-radius: 0.5rem;
+  font-size: 1.2rem;
+  outline: none;
+  transition: 0.5s;
+}
+
+#inputBox:focus {
+  border-color: hotpink;
+}
+
+.inputContainer {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#taskContainer {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.task {
+  border: 2px solid rgb(3, 255, 3);
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-size: 1.2rem;
+  margin: 0.5rem 0;
+  padding: 0.7rem 2rem;
+  text-align: center;
+  transition: 1s;
+  width: 100%;
+  word-wrap: break-word;
+}
+
+.completed {
+  border-color: tomato;
+  opacity: 0.3;
+  text-decoration-line: line-through;
+}
+
+@media screen and (min-width: 1000px) {
+  .task {
+    width: 30%;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 1000px) {
+  .task {
+    width: 50%;
+  }
+}
